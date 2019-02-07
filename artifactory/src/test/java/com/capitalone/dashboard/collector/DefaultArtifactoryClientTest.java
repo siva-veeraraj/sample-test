@@ -133,6 +133,9 @@ public class DefaultArtifactoryClientTest {
     	List<BinaryArtifact> artifacts = defaultArtifactoryClient.getArtifacts(instanceUrl, repoName, 0);
     	assertThat(artifacts.size(), is(1));
     	
+
+
+
     	assertThat(artifacts.get(0).getArtifactName(), is("helloworld"));
     	assertThat(artifacts.get(0).getArtifactGroupId(), is("com.mycompany.myapp"));
     	assertThat(artifacts.get(0).getArtifactVersion(), is("4.8.5.20160909-091018I"));
